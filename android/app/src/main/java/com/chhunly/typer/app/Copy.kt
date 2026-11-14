@@ -29,6 +29,12 @@ data class Copy(
     /** Labels for System, Off, Light and Strong, in that order. */
     val vibrationOptions: List<String>,
     val vibrationDetail: String,
+    val resetTitle: String,
+    val resetDetail: String,
+    val resetButton: String,
+    val resetConfirm: String,
+    val resetCancel: String,
+    val resetDone: String,
 ) {
     companion object {
         val khmer = Copy(
@@ -61,6 +67,12 @@ data class Copy(
             vibrationTitle = "ការញ័រពេលចុច",
             vibrationOptions = listOf("តាមប្រព័ន្ធ", "បិទ", "ស្រាល", "ខ្លាំង"),
             vibrationDetail = "តាមប្រព័ន្ធ៖ ធ្វើតាមការកំណត់ការញ័ររបស់ទូរស័ព្ទ។",
+            resetTitle = "លុបអ្វីដែល Typer បានរៀន",
+            resetDetail = "Typer នឹងភ្លេចពាក្យដែលអ្នកបានជ្រើស ហើយពាក្យស្នើនឹងត្រឡប់ទៅដូចពេលទើបដំឡើង។",
+            resetButton = "លុប",
+            resetConfirm = "លុបអ្វីដែល Typer បានរៀន? មិនអាចត្រឡប់វិញបានទេ។",
+            resetCancel = "បោះបង់",
+            resetDone = "បានលុបរួចរាល់",
         )
 
         val english = Copy(
@@ -93,6 +105,12 @@ data class Copy(
             vibrationTitle = "Key vibration",
             vibrationOptions = listOf("System", "Off", "Light", "Strong"),
             vibrationDetail = "System follows your phone's touch vibration setting.",
+            resetTitle = "Reset what Typer learned",
+            resetDetail = "Typer forgets the words you picked, and Suggestions go back to how they were at install.",
+            resetButton = "Reset",
+            resetConfirm = "Reset what Typer learned? This can't be undone.",
+            resetCancel = "Cancel",
+            resetDone = "Reset done",
         )
     }
 }
